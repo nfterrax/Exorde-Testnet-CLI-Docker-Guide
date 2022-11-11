@@ -1,6 +1,6 @@
 # Exorde-CLI-Docker-Guide
 
-### The short and fast installation guide:
+### The short and fast installation guide. Execute the commands sequentially. One by one:
 
 1
 ```
@@ -115,4 +115,7 @@ View general server statistics (for example, to check the system load):
 ```
 top
 ```
+
+[ОФИЦИАЛЬНАЯ ИНСТРУКЦИЯ ОТ КОМАНДЫ EXORDE LABS](http://google.com/](https://github.com/exorde-labs/ExordeModuleCLI/tree/feat/docker)
+
 
