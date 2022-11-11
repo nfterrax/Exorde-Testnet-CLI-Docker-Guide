@@ -74,7 +74,8 @@ To do this, enter a command that will display all our containers:
 ```
 docker ps -a
 ```
-Copy your <container_id> and enter the command to restart the container:
+
+Copy your <container_id> and enter the command to restart the container. Also, with the same command, you need to restart the module when a new version is released:
 ```
 docker restart <container_id>
 ```
@@ -82,10 +83,8 @@ For example:
 ```
 docker restart 1f77bd5b1111
 ```
-Also, with the same command, you need to restart the module when a new version is released.
 
 To display the processes taking place in a container that is open in the background, you need to enter the command:
-
 ```
 docker logs --follow  <container_id>
 ```
@@ -94,16 +93,14 @@ For example:
 docker logs --follow  1f77bd5b1111
 ```
 
-Other commands that may be useful to you:
+> Other commands that may be useful to you:
 
 Stop a module:
-
 ```
 docker stop <container_id>
 ```
 
 Delete a module:
-
 ```
 docker rm <container_id>
 ```
@@ -111,7 +108,6 @@ docker rm <container_id>
 Remember that in order for your modules to work properly, it is necessary that they do not overload your system. Therefore, open such a number of modules that will work optimally for your technical characteristics
 
 View general server statistics (for example, to check the system load):
-
 ```
 top
 ```
