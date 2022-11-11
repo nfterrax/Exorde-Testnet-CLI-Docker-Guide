@@ -1,4 +1,4 @@
-# Exorde-Testnet-CLI-Docker-Guide
+# Exorde Testnet CLI Docker Guide
 
 ### The short and fast installation guide. Execute the commands sequentially. One by one:
 
