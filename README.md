@@ -64,7 +64,6 @@ docker run -d exorde-cli -m 0x16f177263988fF6fc8999013BD9bCB70F39b42d3 -l 2
 Done! Your module is running in the container in the background. Now you can close the CLI terminal, and the module will continue to work.
 
 To run another copy of the module, simply repeat the same command:
-For example:
 ```
 docker run -d exorde-cli -m YOUR_MAIN_ADDRESS -l 2
 ```
