@@ -52,7 +52,7 @@ docker build -t exorde-cli .
 ```
 13
 ```
-docker run -d exorde-cli -m 0xfbe0DA7F87D1979812B3a68fc07fb7231EC80c16 -l 2
+docker run -d exorde-cli -m YOUR_MAIN_ADDRESS -l 2
 ```
 
 
