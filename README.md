@@ -115,7 +115,6 @@ View general server statistics (for example, to check the system load):
 ```
 top
 ```
-[OFFICIAL INSTRUCTION FROM THE EXORDE LABS TEAM](https://github.com/exorde-labs/ExordeModuleCLI/tree/feat/docker)
-OFFICIAL INSTRUCTION FROM THE EXORDE LABS TEAM => http://google.com/](
+[OFFICIAL GUIDE FROM THE EXORDE LABS TEAM](https://github.com/exorde-labs/ExordeModuleCLI/tree/feat/docker)
 
 Remember that you need to constantly monitor the updates that are published in [Discord Exorde](https://discord.gg/ExordeLabs) in the #testnet channel
