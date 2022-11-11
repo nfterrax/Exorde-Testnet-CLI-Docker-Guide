@@ -105,7 +105,7 @@ Delete a module:
 docker rm <container_id>
 ```
 
-Remember that in order for your modules to work properly, it is necessary that they do not overload your system. Therefore, open such a number of modules that will work optimally for your technical characteristics
+Remember that in order for your modules to work properly, it is necessary that they do not overload your system. Therefore, open such a number of modules that will work optimally for your technical characteristics.
 
 View general server statistics (for example, to check the system load):
 ```
