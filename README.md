@@ -40,38 +40,26 @@ sudo systemctl status docker
 ```
 10
 ```
-git clone https://github.com/exorde-labs/ExordeModuleCLI.git
-```
-11
-```
-cd ./ExordeModuleCLI
-```
-12
-```
-git pull
-```
-13
-```
-docker build -t exorde-cli .
-```
-14
-```
-docker run -d -e PYTHONUNBUFFERED=1 exorde-cli -m YOUR_MAIN_ETH_ADDRESS -l 2
+docker run -d --restart unless-stopped --pull always --name CONTAINER_NAME rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m YOUR_MAIN_ETH_ADDRESS -l 2
 ```
 For example:
 ```
-docker run -d -e PYTHONUNBUFFERED=1 exorde-cli -m 0x16f177263988fF6fc8999013BD9bCB70F39b42d3 -l 2
+docker run -d --restart unless-stopped --pull always --name exorde-cli1 rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m 0x16f177263988fF6fc8999013BD9bCB70F39b42d3 -l 2
 ```
 
 ### NOTES
 
 Done! Your module is running in the container in the background. Now you can close the CLI terminal, and the module will continue to work.
 
-To run another copy of the module, simply repeat the same command:
+To run another copy of the module, simply repeat the same command but with a different CONTAINER_NAME:
 ```
-docker run -d exorde-cli -m YOUR_MAIN_ADDRESS -l 2
+docker run -d --restart unless-stopped --pull always --name CONTAINER_NAME2 rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m YOUR_MAIN_ETH_ADDRESS -l 2
 ```
-How many times will you enter this command, how many modules will you run.
+For example:
+```
+docker run -d --restart unless-stopped --pull always --name exorde-cli2 rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m 0x16f177263988fF6fc8999013BD9bCB70F39b42d3 -l 2
+```
+How many times you enter this command with different names, the number of modules you will run.
 
 Don't forget that containers can sometimes stop. And they need to be restarted. First, we need to find out <container_id>
 To do this, enter a command that will display all our containers:
