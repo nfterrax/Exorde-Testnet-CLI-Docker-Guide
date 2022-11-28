@@ -14,7 +14,7 @@
 **SSD:** 1 Gb
 
 
-## ⭕ ACTUAL MODULE VERSION: 1.3.4a
+## ⭕ ACTUAL MODULE VERSION: 1.3.4a 1
 
 
 ## ⭕ Quick and easy installation guide. Follow the commands one by one:
@@ -228,6 +228,8 @@ docker run -d --restart unless-stopped --pull always --name <CONTAINER NAME> rg.
 ```
 
 This will restart a single module. If you want to start more than one module again, just repeat the last command by changing <CONTAINER_NAME>.
+
+> ⚠️ ATTENTION! KEEP IN MIND THAT THE FIRST TWO COMMANDS WILL CLEAR ALL CONTAINERS AND IMAGES ON YOUR SERVER! THEREFORE, IF OTHER PROCESSES BESIDES EXORDE ARE RUNNING ON YOUR SERVER, YOU'D BETTER DELETE EACH EXORDE MODULE AND ITS IMAGES SEPARATELY!
 
 > The numbering of CONTROL #1 - CONTROL #4 does not imply that the first place is the most significant control. The control must be comprehensive and include all of the above four points and you must always have the current version of the module, otherwise the rest is meaningless.
 
