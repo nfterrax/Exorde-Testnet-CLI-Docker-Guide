@@ -126,7 +126,7 @@ Or
 ```
 docker restart exorde-cli
 ```
-To restart all containers = modules at once, use the command
+To restart all containers = modules at once, use the command (ABSOLUTELY ALL CONTAINERS ON YOUR SERVER. BE CAREFUL IF YOU RUN SOMETHING OTHER THAN EXORDE):
 ```
 docker restart $(docker ps -a -q)
 ```
