@@ -216,11 +216,7 @@ In case the current version is up to date, processes are happening, REP increase
 IF YOU FIND A NEW VERSION OF THE MODULE (ON THE #testnet CHANNEL IN OUR Discord), THE MOST RELIABLE WAY TO REINSTALL THE MODULE VERSION IS TO COMPLETELY REMOVE AND REINSTALL THE MODULE. To do this, run the following commands in turn:
 
 ```
-docker rm $(docker ps -a -q) --force
-```
-
-```
-docker rmi $(docker images -a -q) --force
+docker rm <container_id> --force
 ```
 
 ```
@@ -228,8 +224,6 @@ docker run -d --restart unless-stopped --pull always --name <CONTAINER NAME> rg.
 ```
 
 This will restart a single module. If you want to start more than one module again, just repeat the last command by changing <CONTAINER_NAME>.
-
-> ⚠️ ATTENTION! KEEP IN MIND THAT THE FIRST TWO COMMANDS WILL CLEAR ALL CONTAINERS AND IMAGES ON YOUR SERVER! THEREFORE, IF OTHER PROCESSES BESIDES EXORDE ARE RUNNING ON YOUR SERVER, YOU'D BETTER DELETE EACH EXORDE MODULE AND ITS IMAGES SEPARATELY!
 
 > The numbering of CONTROL #1 - CONTROL #4 does not imply that the first place is the most significant control. The control must be comprehensive and include all of the above four points and you must always have the current version of the module, otherwise the rest is meaningless.
 
