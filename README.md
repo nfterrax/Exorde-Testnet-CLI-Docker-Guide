@@ -81,7 +81,7 @@ Thus, an example of a ready-made command to start one module (container) looks l
 docker run -d --restart unless-stopped --pull always --name exorde-cli_1 rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m 0x16f177263988fF6fc8999013BD9bCB70F39b42d3 -l 2
 ```
 
-## ⭕ ### NOTES
+## ⭕ NOTES
 
 Finished! Your module is running in the container in the background. Now you can leave everything as it is, close the CLI terminal, and the module will continue to run. But remember that you need to monitor the updates in Discord and the performance of each module separately!
 
