@@ -149,7 +149,7 @@ Or
 ```
 docker stop <CONTAINER_NAME>
 ```
-Stop all containers = modules:
+Stop all containers = modules (ABSOLUTELY ALL CONTAINERS ON YOUR SERVER. BE CAREFUL IF YOU RUN SOMETHING OTHER THAN EXORDE):
 ```
 docker stop $(docker ps -a -q)
 ```
@@ -161,7 +161,7 @@ Or
 ```
 docker rm <CONTAINER_NAME>
 ```
-Delete all containers:
+Delete all containers (ABSOLUTELY ALL CONTAINERS ON YOUR SERVER. BE CAREFUL IF YOU RUN SOMETHING OTHER THAN EXORDE):
 ```
 docker rm $(docker ps -a -q)
 ```
@@ -173,7 +173,7 @@ Or
 ```
 docker rm <CONTAINER_NAME> --force
 ```
-"Force" deletion of all containers = modules (without stopping first):
+"Force" deletion of all containers = modules (without stopping first) (ABSOLUTELY ALL CONTAINERS ON YOUR SERVER. BE CAREFUL IF YOU RUN SOMETHING OTHER THAN EXORDE):
 ```
 docker rm $(docker ps -a -q) --force
 ```
