@@ -131,7 +131,7 @@ To restart all containers = modules at once, use the command (ABSOLUTELY ALL CON
 docker restart $(docker ps -a -q)
 ```
 
-## ⭕ CONTROL N2. SYSTEM LOAD.
+## ⭕ CONTROL N2. SYSTEM LOAD
 For modules to work efficiently, you need to ensure that they do not overload your system. Therefore, run as many modules as will work optimally for your specifications. Accordingly, if you find that the system is working to its limits, stop and remove unnecessary modules.
 
 View the overall statistics of your server (like Task Manager for Windows):
