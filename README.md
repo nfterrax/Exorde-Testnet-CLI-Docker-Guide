@@ -57,7 +57,7 @@ sudo systemctl status docker
 ```
 10
 ```
-docker run -d --restart unless-stopped --pull always --name <CONTAINER_NAME> rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m <YOUR_MAIN_ETH_ADDRESS> -l <LEVEL OF LOGGING>
+docker run -d --restart unless-stopped --pull always --name <CONTAINER_NAME> exordelabs/exorde-cli -m <YOUR_MAIN_ETH_ADDRESS> -l <LEVEL OF LOGGING>
 ```
 > **Variables:**
 > - <CONTAINER NAME> - think of any name for your container, for example: **exorde-cli_1**
@@ -78,7 +78,7 @@ docker run -d --restart unless-stopped --pull always --name <CONTAINER_NAME> rg.
 
 Thus, an example of a ready-made command to start one module (container) looks like this:
 ```
-docker run -d --restart unless-stopped --pull always --name exorde-cli_1 rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m 0x16f177263988fF6fc8999013BD9bCB70F39b42d3 -l 2
+docker run -d --restart unless-stopped --pull always --name exorde-cli_1 exordelabs/exorde-cli -m 0x16f177263988fF6fc8999013BD9bCB70F39b42d3 -l 2
 ```
 
 ## ⭕ NOTES
@@ -87,11 +87,11 @@ Finished! Your module is running in the container in the background. Now you can
 
 To run an extra copy of the module, just repeat the same command, but with a different <CONTAINER NAME>:
 ```
-docker run -d --restart unless-stopped --pull always --name <CONTAINER_NAME_2> rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m <YOUR_MAIN_ETH_ADDRESS> -l <LEVEL OF LOGGING>
+docker run -d --restart unless-stopped --pull always --name <CONTAINER_NAME_2> exordelabs/exorde-cli -m <YOUR_MAIN_ETH_ADDRESS> -l <LEVEL OF LOGGING>
 ```
 For example:
 ```
-docker run -d --restart unless-stopped --pull always --name exorde-cli_2 rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m 0x16f177263988fF6fc8999013BD9bCB70F39b42d3 -l 2
+docker run -d --restart unless-stopped --pull always --name exorde-cli_2 exordelabs/exorde-cli -m 0x16f177263988fF6fc8999013BD9bCB70F39b42d3 -l 2
 ```
 How many times you enter this command with different names, the number of modules you will run.
 
@@ -220,7 +220,7 @@ docker rm <container_id> --force
 ```
 
 ```
-docker run -d --restart unless-stopped --pull always --name <CONTAINER NAME> rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m <YOUR_MAIN_ETH_ADDRESS> -l 2
+docker run -d --restart unless-stopped --pull always --name <CONTAINER NAME> exordelabs/exorde-cli -m <YOUR_MAIN_ETH_ADDRESS> -l 2
 ```
 
 This will restart a single module. If you want to start more than one module again, just repeat the last command by changing <CONTAINER_NAME>.
