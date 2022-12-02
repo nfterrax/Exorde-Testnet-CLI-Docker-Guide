@@ -14,7 +14,7 @@
 **SSD:** 1 Gb
 
 
-## ⭕ ACTUAL MODULE VERSION: 1.3.4.2
+## ⭕ ACTUAL MODULE VERSION: 1.3.4.3a
 
 
 ## ⭕ Quick and easy installation guide. Follow the commands one by one:
