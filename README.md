@@ -85,7 +85,7 @@ docker run -d --restart unless-stopped --pull always --name exorde-cli_1 exordel
 
 Finished! Your module is running in the container in the background. Now you can leave everything as it is, close the CLI terminal, and the module will continue to run. But remember that you need to monitor the updates in Discord and the performance of each module separately!
 
-To run an extra copy of the module, just repeat the same command, but with a different <CONTAINER NAME>:
+To run an extra copy of the module, just repeat the same command, but with a different CONTAINER NAME:
 ```
 docker run -d --restart unless-stopped --pull always --name <CONTAINER_NAME_2> exordelabs/exorde-cli -m <YOUR_MAIN_ETH_ADDRESS> -l <LEVEL OF LOGGING>
 ```
