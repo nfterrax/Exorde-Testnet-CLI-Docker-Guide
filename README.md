@@ -61,7 +61,7 @@ docker run -d --restart unless-stopped --pull always --name <CONTAINER_NAME> exo
 ```
 > **Variables:**
 > - <CONTAINER NAME> - think of any name for your container, for example: **exorde-cli_1**
-> - <YOUR_MAIN_ETH_ADDRESS> - The OTC address of your Ethereum (ETH) Mainnet wallet. (For example, from MetaMask).
+> - <YOUR_MAIN_ETH_ADDRESS> -  your main Ethereum (ETH) Mainnet address. For example, from Metamask. Not from the exchange
 > - <LEVEL OF LOGGING> - is spelled with one of five digits from 0 to 4 and means:
 >      
 >        = 0 - no logs
